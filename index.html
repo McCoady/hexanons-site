@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>H3X4N0NS</title>
+  <script integrity="sha384-Jk2KQmxNIrlZNY8bE1bEnOjnx9PkvpwWgH/MEBCK+gpks+KdtHLnr2RzmMseDrGh" crossorigin="anonymous"
+    src="https://cdn-cors.ethers.io/lib/ethers-5.5.4.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/keccak256@latest/keccak256.js"></script>
+
+</head>
+
+<body>
+  <script src="./sketch.js"></script>
+  <div class="content">
+    <header>
+      <h1>H3X4N0NS</h1>
+      <div class="wallet">
+        <button id="connect-button" class="btn" onclick="toggleConnect()">Connect Wallet</button>
+        <div id="connect-message"></div>
+      </div>
+
+    </header>
+    <main>
+      <div>
+        <div id="supply"></div>
+        <div id="mint-start"></div>
+        <div class="mint-btns">
+          <button class="mint-btn" onclick="mintPriority()">Mint Priority</button>
+          <button class="mint-btn" onclick="mintHolder()">Mint Toad Holder</button>
+        </div>
+        <p>Take a HexAnon, make it your own.</p>
+        <p>Priority allowlist mint is open for the first 24 hours. After that Toad Holder mint opens.</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://www.twitter.com/CircolorsDAO"><img src="./img/twitter.png" class="link_btn"
+          alt="twitter link" /></a>
+      <a href="https://discord.gg/UJtkgAgxUV"><img src="./img/discord.png" class="link_btn" alt="discord link" /></a>
+      <a href="https://opensea.io/collection/scrawl-by-pixelwank"><img src="./img/opensea.png" class="link_btn"
+          alt="opensea link" /></a>
+      <a href="https://etherscan.io/address/0x98aeae2e583f2434d9b3d2fd7b3b9dbe32dc8ca8"><img src="./img/etherscan.png"
+          class="link_btn" alt="etherscan link" /></a>
+    </footer>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

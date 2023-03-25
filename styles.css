@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+}
+
+.content {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  align-items: center;
+}
+
+h1 {
+  margin: 1%;
+  color: white;
+  font-size: 5rem;
+  background-color: black;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.link_btn {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+}
+
+.link_btn:hover {
+  width: 70px;
+  height: 70px;
+  transition: 1s;
+}
+
+.wallet {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background: transparent;
+  text-align: center;
+  border: none;
+  font-size: 1.25rem;
+  color: orange;
+  font-family: 'Share Tech Mono', monospace;
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  color:orangered;
+}
+
+.btn:disabled {
+  text-decoration: line-through;
+}
+
+#connect-message {
+  color: orangered;
+}
+
+.mint-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.mint-btn {
+  background: black;
+  text-align: center;
+  border: 2px solid orange;
+  font-size: 1.5rem;
+  color: orange;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 1rem;
+  padding: 0.5rem;
+  opacity: 80%;
+  font-weight: bold;
+}
+
+.mint-btn:hover {
+  color: orangered;
+  border: 2px solid orangered;
+}
+
+@media (max-width: 400px) {
+  main {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .content {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  #connect-message {
+    font-size: 0.6rem;
+  }
+  .btn {
+    font-size:0.9rem;
+  }
+  .mint-btn {
+    font-size:1.25rem;
+    padding: 0.25rem;
+  }
+}
